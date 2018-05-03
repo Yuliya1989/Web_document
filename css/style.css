@@ -1,0 +1,510 @@
+﻿body {
+font-family: 'Gentium Basic', 'Calibri', sans-serif;
+font-weight: 600;
+font-size: 1.3rem;
+color: rgba(255,255,255,0.9);
+}
+.wrapper {
+width: 1600px;
+margin: 0 auto;
+position: relative;
+}
+header {
+width: 1600px;
+height: 750px;
+background-color: rgb(75,75,75);
+background: url(../assets/images/slider_bg.jpg);
+background-repeat: no-repeat;
+}
+.header_wrap {
+width: 1600px;
+height: 750px;
+background: linear-gradient(to bottom, rgba(0,0,0,0.3) 1%, transparent 8%, transparent 100%);
+}
+.logo_top {
+width: 156px;
+position: relative;
+top: 47px;
+left: 179px;
+user-select: none;
+}
+.logo_top h1, .slider_title h2 {
+display: none;
+}
+.menu_main ul li {
+float: left;
+padding: 50px 13px 0px;
+margin: 0 11px;
+list-style: none;
+position: relative;
+top: -53px;
+left: 510px;
+user-select: none;
+}
+.menu_main ul li:hover, .menu_main ul li:active {
+border-top: 3px solid rgb(209,203,188);
+padding-top: 47px;
+}
+a {
+text-decoration: none;
+color: rgb(255,255,255);
+}
+.header_social_icons {
+width: 81px;
+height: 21px;
+position: relative;
+top: -2px;
+left: 518px;
+}
+.header_social_icons a {
+position: absolute;
+height: 21px;
+}
+.icon1 {
+left: 787px;
+width: 19px;
+background: url(../assets/images/social_icons_top.png) 0 0 no-repeat;
+}
+.icon2 {
+left: 823px;
+width: 19px;
+background: url(../assets/images/social_icons_top.png) -37px 0 no-repeat;
+}
+.icon3 {
+left: 857px;
+width: 10px;
+background: url(../assets/images/social_icons_top.png) -70px 0 no-repeat;
+}
+.header_social_icons a:hover, .footer_payment_icons a:hover, .footer_social_icons a:hover {
+filter: invert(30%);
+}
+.slider {
+position: absolute;
+left: 322px;
+top: 240px;
+text-align: center;
+user-select: none;
+}
+.slider_decoration {
+margin: 25px 0 45px 0;
+}
+.decor {            /* убрать возможность выделения со всех картинок decoration */
+user-select: none;
+}
+.slider_buttons a {
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 1.125rem;
+background-color: rgba(0,0,0,0.6);
+padding: 18px 50px;
+border: 1px solid rgba(0,0,0,0.9);
+margin: 0 12px;
+}
+.slider_buttons a:last-child {
+background-color: rgba(255,255,255,0.2);
+padding: 18px 50px;
+border: 1px solid rgba(255,255,255,0.7);
+}
+.slider_buttons a:hover {
+background-color: rgba(0,0,0,0.8);
+}
+.slider_buttons a:last-child:hover {
+background-color: rgba(255,255,255,0.4);
+}
+.block_about_wrap {
+width: 1600px;
+height: 710px;
+background-color: rgb(240,240,240);
+background-image: url(../assets/images/pattern1.png);
+}
+.block_about {
+width: 1600px;
+height: 710px;
+background: linear-gradient(to top left, rgba(255,255,255,0.5), rgba(255,255,255,0.9));
+box-shadow: inset 0 0 100px rgb(230,230,230);
+font-size: 0;     /* избавление от зазора между блоками при display: inline-block */
+}
+.block_about_text_column {
+width: 510px;
+text-align: center;
+position: relative;
+left: 240px;
+display: inline-block;
+vertical-align: middle;
+font-size: 1.3rem;     /* избавление от зазора между блоками при display: inline-block */
+}
+.block_about_text {
+max-height: 310px;
+overflow: hidden;
+}
+.block_about_text_column h2, .block_ingredients_column h2, .block_menu h2, .block_reviews_column h2, .block_reservations_text_column h2 {
+font-family: 'Yeseva One';
+font-weight: 600;
+font-size: 2.5rem;
+color: rgb(221,154,0);
+margin-top: 0;
+margin-bottom: 15px;
+user-select: none;
+}
+.block_about_text_column p, .block_ingredients_column p, .block_menu_item p, .block_reservations_text_column p {
+font-family: 'Arial';
+font-weight: 600;
+font-size: 0.95rem;
+line-height: 1.5rem;
+color: rgb(110,110,110);
+margin: 20px 0;
+}
+.block_about_img_sign {
+position: relative;
+left: 30px;
+margin-top: 20px;
+user-select: none;
+}
+.block_about_img_column {
+position: relative;
+top: 20px;
+left: 230px;
+display: inline-block;
+vertical-align: middle;
+user-select: none;
+}
+.block_about:before, .block_ingredients:before, .block_reviews:before, .block_reservations:before, footer:before {
+display: inline-block;
+height: 100%;
+vertical-align: middle;
+content: "";
+}
+.block_ingredients {
+width: 1600px;
+height: 758px;
+background-color: rgb(75,75,75);
+background-image: url(../assets/images/block_ingredients_bg.jpg);
+font-size: 0;     /* избавление от зазора между блоками при display: inline-block */
+}
+.block_ingredients_column {
+width: 570px;
+background-color: rgba(0,0,0,0.5);
+position: relative;
+left: 815px;
+text-align: center;
+padding-top: 70px;
+display: inline-block;
+vertical-align: middle;
+font-size: 1.3rem;     /* избавление от зазора между блоками при display: inline-block */
+}
+.block_ingredients_column h2, .block_ingredients_column p, .block_reviews_column h2 {
+color: rgb(255,255,255);
+}
+.block_ingredients_text {
+max-height: 280px;
+overflow: hidden;
+padding: 0 10px;
+}
+.block_ingredients_images {
+font-size: 0;     /* избавление от зазора между блоками при display: inline-block */
+}
+.block_ingredients_images div {
+display: inline-block;
+margin: 60px 10px;
+width: 100px;
+height: 100px;
+border: 5px solid rgba(255,255,255,0.07);
+border-radius: 100px;
+overflow: hidden;
+user-select: none;
+font-size: 1.3rem;     /* избавление от зазора между блоками при display: inline-block */
+}
+.block_menu_wrap {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 1600px;
+min-height: 994px;
+background-color: rgb(240,240,240);
+background-image: url(../assets/images/pattern2.png);
+}
+.block_menu {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 1600px;
+min-height: 994px;
+background: linear-gradient(to top left, rgba(255,255,255,0.9), rgba(234,240,240,0.9));
+box-shadow: inset 0 0 100px rgb(225,225,225);
+text-align: center;
+margin: auto;
+}
+.block_menu_column {
+display: inline-block;
+margin: 0 50px;
+}
+.block_menu_article {
+margin: 50px auto;
+}
+.block_menu_item {
+width: 430px;
+margin: 47px auto;
+text-align: left;
+}
+#special_menu{
+border: 24px solid transparent;
+border-image: url(../assets/images/border.png) 30 stretch;
+margin: -30px auto;
+}
+.block_menu_item div {
+margin: 10px 0 5px;
+}
+.block_menu_item div, .block_menu_item img, .block_menu_item p {     /* аннулировать высоту строки в данном случае обяз-но */
+line-height: 0;
+}
+.block_menu_item div span {
+font-family: 'Yeseva One';
+font-size: 1.5rem;
+color: rgb(221,154,0);
+}
+.block_menu_item div span:last-child {
+float: right;
+}
+.block_menu_item p {
+margin: 13px 0;
+}
+.block_reviews{
+width: 1600px;
+height: 758px;
+background-color: rgb(75,75,75);
+background-image: url(../assets/images/block_reviews_bg.jpg);
+text-align: center;
+font-size: 0;     /* избавление от зазора между блоками при display: inline-block */
+}
+.block_reviews_column {
+width: 770px;
+height: 557px;
+background-image: url(../assets/images/block_reviews_text_bg.png);
+display: inline-block;
+vertical-align: middle;
+padding-top: 70px ;
+box-sizing: border-box;
+font-size: 1.3rem;     /* избавление от зазора между блоками при display: inline-block */
+}
+.block_reviews_text {
+width: 620px;
+max-height: 320px;
+overflow: hidden;
+margin: 0 auto;
+padding-bottom: 15px;
+}
+.block_reviews_text p {
+font-family: 'Gentium Basic';
+font-weight: 600;
+font-size: 1.5rem;
+line-height: 2.8rem;
+color: rgb(221,225,224);
+}
+.block_reviews_column span, input[type=submit] {
+font-family: 'Arial';
+font-weight: 400;
+font-size: 1rem;
+color: rgb(255,255,255);
+}
+.block_reviews_text img {
+position: absolute;   /* абсолютное позиционирование без указания родительскому блоку position: relative, иначе картинка не видна из-за левого margin блока .block_reviews_text */ 
+left: 450px;
+user-select: none;
+}
+.block_reservations_wrap {
+width: 1600px;
+height: 710px;
+background-image: url(../assets/images/pattern1.png);
+}
+.block_reservations {
+width: 1600px;
+height: 710px;
+background: linear-gradient(to top left, rgba(234,240,240,0.6), rgba(255,255,255,0.8));
+box-shadow: inset 0 0 100px rgb(240,240,240);
+text-align: center;
+font-size: 0;     /* избавление от зазора между блоками при display: inline-block */
+}
+.block_reservations_img_column, .block_reservations_text_column {
+width: 570px;
+display: inline-block;
+vertical-align: middle;
+font-size: 1.3rem;     /* избавление от зазора между блоками при display: inline-block */
+}
+.block_reservations_img_column img:first-child {
+float: left;
+user-select: none;
+}
+.block_reservations_img_column img:last-child {
+float: right;
+user-select: none;
+}
+.block_reservations_text_column {
+padding: 0px 70px;
+margin-left: 30px;
+box-sizing: border-box;
+}
+label {
+font-family: 'Arial';
+font-weight: 600;
+font-size: 0.95rem;
+color: rgb(221,154,0);
+letter-spacing: 0.02rem;
+}
+tr:nth-child(odd) td {
+padding-top: 15px;
+}
+tr td:nth-child(1) {
+width: 230px;
+text-align: left;
+}
+tr td:nth-child(2) {
+width: 200px;
+text-align: left;
+}
+tr td:nth-child(1) input {
+width: 173px;
+}
+tr td:nth-child(2) input {
+width: 173px;
+}
+input, select:first-child {
+padding: 6px 5px 6px 13px;
+background-color: rgba(255,255,255,0.3);
+border: 1px solid rgb(200,200,200);
+}
+select:first-child, input[type=submit] {
+padding: 8px 5px 8px 13px;
+width: 190px;
+}
+input[type=date], ::-webkit-input-placeholder, select:first-child {
+font-family: 'Arial';
+font-weight: 600;
+font-size: 1rem;
+font-style: italic;
+color: rgb(170,170,170);
+}
+::-moz-placeholder {
+font-family: 'Arial';
+}
+:-ms-input-placeholder {
+font-family: 'Arial';
+}
+:-moz-placeholder {
+font-family: 'Arial';
+}
+input[type="date"]:before {             /* placeholder в input date */
+content: attr(placeholder) !important;
+margin-right: 4.85rem;
+}
+::-webkit-calendar-picker-indicator {
+color: transparent;
+opacity: 1;
+background: url(../assets/images/calendar.png) no-repeat;
+}
+table tr:last-child td {
+text-align: center;
+}
+input[type=submit] {
+background-color: rgb(221,154,0);
+border: 1px solid rgb(221,154,0);
+}
+input:focus, input:hover, select:first-child:focus, select:first-child:hover {
+outline: none;
+border: 1px solid rgb(221,154,0);
+}
+input[type=submit]:hover {
+outline: none;
+filter: grayscale(100%);
+}
+form {
+user-select: none;
+}
+footer {
+width: 1600px;
+height: 321px;
+background-color: rgb(25,25,25);
+text-align: center;
+font-size: 0;    /* избавление от зазора между блоками при display: inline-block */
+}
+.footer_block {
+width: 370px;
+max-height: 270px;
+overflow: hidden;
+display: inline-block;
+vertical-align: middle;
+font-size: 1.3rem;    /* избавление от зазора между блоками при display: inline-block */
+}
+.footer_block h2 {
+font-family: 'Yeseva One';
+font-weight: 600;
+font-size: 1.5rem;
+color: rgb(255,255,255);
+margin-top: 0;
+margin-bottom: 15px;
+}
+.footer_block p {
+font-family: 'Arial';
+font-weight: 400;
+font-size: 1rem;
+color: rgb(255,255,255);
+letter-spacing: 0.03rem;
+line-height: 1.5rem;
+margin-bottom: 0;
+}
+.footer_payment_icons {
+width: 120px;
+height: 14px;
+margin-top: 50px;
+position: relative;
+}
+.footer_payment_icons a {
+position: absolute;
+width: 24px;
+height: 14px;
+}
+.pay_icon1 {
+left: 120px;
+background: url(../assets/images/payments.png) 0 0 no-repeat;
+}
+.pay_icon2 {
+left: 153px;
+background: url(../assets/images/payments.png) -32px 0 no-repeat;
+}
+.pay_icon3 {
+left: 185px;
+background: url(../assets/images/payments.png) -65px 0 no-repeat;
+}
+.pay_icon4 {
+left: 217px;
+background: url(../assets/images/payments.png) -97px 0 no-repeat;
+}
+.footer_social_icons {
+width: 88px;
+height: 17px;
+margin-top: 50px;
+position: relative;
+}
+.footer_social_icons a {
+position: absolute;
+height: 17px;
+}
+.foot_icon1 {
+left: 140px;
+width: 8px;
+background: url(../assets/images/footer_soc_icons.png) 0 0 no-repeat;
+}
+.foot_icon2 {
+left: 160px;
+width: 18px;
+background: url(../assets/images/footer_soc_icons.png) -18px 0 no-repeat;
+}
+.foot_icon3 {
+left: 189px;
+width: 16px;
+background: url(../assets/images/footer_soc_icons.png) -45px 0 no-repeat;
+}
+.foot_icon4 {
+left: 217px;
+width: 18px;
+background: url(../assets/images/footer_soc_icons.png) -71px 0 no-repeat;
+}
